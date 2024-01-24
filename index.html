@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <section class="section-1 img-fluid"
+        style="background-image: url(assets/huddle-landing-page-with-alternating-feature-blocks-master/images/bg-hero-desktop.svg);">
+        <section class="nav-bar">
+            <div class="container col-xxl-12 px-1">
+                <header class="d-flex py-5 mb-4" style="justify-content: space-between;">
+                    <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis">
+                        <img src="assets/huddle-landing-page-with-alternating-feature-blocks-master/images/logo.svg"
+                            id="huddle-logo">
+                    </a>
+                    <button class="btn btn-primary" id="try-it" onclick="tryItBtn()">Try it Free</button>
+                </header>
+            </div>
+        </section>
+        <div class="first-hero d-flex">
+            <div class="container px-1 py-5 d-flex">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <h3>Build The Community Your Fans Will Love</h3>
+                        <p>Huddle re-imagines the way we build communities. You have a voice but so does your audience.
+                            Create connections with your users as you engage in genuine discussion.</p>
+                        <button class="btn btn-primary" id="get-started">Get Started For Free</button>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="assets/huddle-landing-page-with-alternating-feature-blocks-master/images/illustration-mockups.svg"
+                            alt="" class="d-block mx-lg-auto img-fluid" id="mockups-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="second-hero px-1 py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 mb-5 d-flex align-items-center" id="second-hero-col1">
+                        <div class="col-lg-5">
+                            <h3>Grow Together</h3>
+                            <p>Generate meaningful discussions with your audience and build a strong, loyal community.
+                                Think of the insightful conversation you miss out on with a feedback form.</p>
+                        </div>
+                        <div class="col-lg-4">
+                            <img src="assets/huddle-landing-page-with-alternating-feature-blocks-master/images/illustration-grow-together.svg"
+                                alt="" class="d-block mx-lg-auto img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-lg-12 d-flex align-items-center" id="second-hero-col2">
+                        <div class="col-lg-4 me-5">
+                            <img src="assets/huddle-landing-page-with-alternating-feature-blocks-master/images/illustration-flowing-conversation.svg"
+                                alt="" class="d-block mx-lg-auto img-fluid">
+                        </div>
+                        <div class="col-lg-5 ms-3">
+                            <h3>Flowing Conversations</h3>
+                            <p>You wouldn't paginate a conversation in real life, so why do it online? Our threads have
+                                just-in-time loading for a more natural flow.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 mt-5 d-flex align-items-center" id="second-hero-col3">
+                        <div class="col-lg-5">
+                            <h3>Your Users</h3>
+                            <p>It takes no time at all to integrate Huddle with your app's authentication solution. This
+                                means, once signed in to your app, your users can start chatting immediately.</p>
+                        </div>
+                        <div class="col-lg-4">
+                            <img src="assets/huddle-landing-page-with-alternating-feature-blocks-master/images/illustration-your-users.svg"
+                                alt="" class="d-block mx-lg-auto img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section style="background-color: hsl(192, 100%, 9%);" id="third-section">
+        <div class="container px-1 py-5">
+            <div class="modal-container"> 
+                <div class="col-lg-6 d-flex" id="modal" style="background-color: white;">
+                    <h3>Ready To Build Your Community?</h3>
+                    <button class="btn btn-primary mt-3" id="modal-btn" onclick="openPopup()">Get Started For Free</button>
+                </div>
+            </div>
+            <img src="assets/huddle-landing-page-with-alternating-feature-blocks-master/images/logo.svg" alt=""
+                style="filter: invert(100%); width: 200px;" id="footer-huddle-logo">
+            <div class="popup" id="popup">
+                <div id="inner-popup">
+                    <h3>Thank you!</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque rem facere corporis debitis
+                        perferendis ratione?</p>
+                    <button onclick="closePopup()" id="popupBtn" class="btn btn-primary">Ok</button>
+                </div>
+            </div>
+            <div class="mt-5 d-flex col-lg-12" style="flex-direction: row;" id="footer">
+                <div class="col-lg-5 d-flex" style="flex-direction: column; ">
+                    <div id="contact-section">
+                        <div style="display: grid; grid-template-columns: 30px auto;">
+                            <div >
+                                <img src="assets/huddle-landing-page-with-alternating-feature-blocks-master/images/icon-location.svg"
+                                    alt="" style="width: 15px; ">
+                            </div>
+                            <div>
+                                <p style="color: white;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe
+                                    atque sed similique. Consectetur sequi iste quidem alias.</p>
+                            </div>
+                        </div>
+                        <div id="contact">
+                            <div style="display: grid; grid-template-columns: 30px auto;">
+                                <div>
+                                    <img src="assets/huddle-landing-page-with-alternating-feature-blocks-master/images/icon-phone.svg"
+                                        alt="" style="width: 15px; ">
+                                </div>
+                                <div>
+                                    <p style="color: white;">+1-543-123-4567</p>
+                                </div>
+                            </div>
+                            <div style="display: grid; grid-template-columns: 30px auto;">
+                                <div>
+                                    <img src="assets/huddle-landing-page-with-alternating-feature-blocks-master/images/icon-email.svg"
+                                        alt="" style="width: 15px; ">
+                                </div>
+                                <div>
+                                    <p style="color: white;">example@huddle.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-flex" style="flex-direction: row; justify-content: space-between;" id="links">
+                    <div class="d-flex col-lg-4" style="flex-direction: column;">
+                        <a href="">About Us</a>
+                        <a href="">What We Do</a>
+                        <a href="">FAQ</a>
+                    </div>
+                    <div class="d-flex col-lg-4" style="flex-direction: column;">
+                        <a href="">Career</a>
+                        <a href="">Blog</a>
+                        <a href="">Contact Us</a>
+                    </div>
+                    <div class="d-flex col-lg-4" style="flex-direction: row;" id="social-media-icons">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+<script src="script.js"></script>
+
+</html>
