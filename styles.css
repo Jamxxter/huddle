@@ -152,3 +152,15 @@
 #contact-section{
     width: 80%;
 }
+#creator{
+    color: #fff;
+    text-align: center;
+}
+#creator a{
+    text-decoration: none;
+    color: #fff;
+}
+#creator a:hover{
+    text-decoration: underline;
+    color: rgb(201, 201, 204);
+}
